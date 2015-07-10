@@ -5,6 +5,8 @@ Main modules are in package `langid`:
 * `ngramprofile.py`: language profile class and methods
 * `utils.py`: helper functions to iterate n-grams in a file
 
+Required package(s): `pyyaml`
+
 ### Sample Codes
 Sample codes are in folder *sample*. This folder includes:
 
@@ -18,6 +20,7 @@ Sample codes are in folder *sample*. This folder includes:
   * The *sentence* file in each archive was split into 20K chunks, the first 10 chunks were used as testing data, while the 11th chunk was used as training data.
   * The language code is the name of each training file and is the prefix of each testing file.
 2. Codes:
+  * The path of this project must be in `PYTHONPATH` in order to run sample codes.
   * `train_languages.py`: Read each training file in folder *sample/training* and write the corresponding model to folder *sample/models*
   * `test_languages.py`: Read each testing file in folder *sample/testing* and report the accuracy
 3. Result: The accuracy of this dataset is `1.0`.
