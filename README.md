@@ -1,7 +1,7 @@
 # An N-Gram Based Language Identifier
-This project implements the approach described on: [William B. Cavnar and John M. Trenkle - **N-Gram-Based Text Categorization**](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.53.9367)
+This project implements the approach described on: [William B. Cavnar and John M. Trenkle - **N-Gram-Based Text Categorization**](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.53.9367).
 
-Main modules are in package *langid*:
+Main modules are in package `langid`:
 * `ngramprofile.py`: language profile class and methods
 * `utils.py`: helper functions to iterate n-grams in a file
 
