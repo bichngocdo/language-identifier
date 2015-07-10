@@ -43,7 +43,7 @@ class NGramIterator:
 
     def next(self):
         try:
-            c = self.iterator.next()
+            c = self.iterator.next().lower()
         except:
             c = None
         if c is None:

@@ -14,9 +14,13 @@ class NGramProfile:
         self.profile = dict()
         for k in xrange(len(grams)):
             self.profile[grams[k]] = k
-        self.name = name
+        self.language = name
 
     def compare(self, other):
+        """Return the out-of-place distance between this profile and other profile
+        :param other: other profile
+        :return: out-of-place distance
+        """
         total = 0
         max_score = max(len(self.profile), len(other.profile))
         for gram, position in other.profile.iteritems():
